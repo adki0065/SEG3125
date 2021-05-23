@@ -1,72 +1,79 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-	<link href="styles/style.css" rel="stylesheet" type="text/css">
-    <title>Survey</title>
-  </head>
+<html lang="en">
+<head>
+<title>Survey</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div class="header">
+  <h1>UI Survey</h1>
+</div>
+
+<div class="topnav">
   
-  <body>
-	<h1>Survey</h1>
-	<form id="myform" action="index.php" >
-	<br>
-	<br>
-	
-	<h2>What do you think of the UI in this <a href="https://www.kijiji.ca/">Kijiji</a> site?</h2>	
-	<br>
-	<br>
-	<img src="images/kijiji.png" alt="https://www.kijiji.ca/">
-	<br>
-	<br>
-	<div class="question">
-	<h2> Personal Information </h2>
-	<p>First name: <input type="text" name="firstname"></p>
-	<p>Last name: <input type="text" name="lastname"></p>
-	<br>
-	<br>
-		
-	</div>	
-		
-	<div class="question">
-		<h2> What you like </h2>
-		I like:<br>
-		<input type="checkbox" name="Color" value="Red">Red<br>
-		<input type="checkbox" name="Color" value="Green">Green<br>
-		<input type="checkbox" name="Color" value="Blue">Blue<br>
-		
-		<br>
-		
-		What is your favorite fruit?<br>
-		<select id="favorite">
-			<option value="Apples" selected="selected">Apples</option>
-			<option value="Oranges">Oranges</option>
-			<option value="Bananas">Bananas</option>
-		</select>
-		
-		<br>
-		
-		
-	</div>
-	
-	<br>
-	<br>
-		
-	Comments:<br>
-	<textarea rows="5" cols="30"></textarea>
+</div>
+<h2>What do you think of the UI in this <a href="https://www.kijiji.ca/">Kijiji</a> site?</h2>
+<div class="row">
+  <div class="column left">
+    <br>
+    <form id="myform" action="index.php">
+			<h2>Survey</h2>
+			<div class="question">
+				<h3> What was the first thing you noticed on the page? </h3>
+				answer: <input type="text" name="answer"><br>
+				<br><br>
+			</div>
+			<div class="question">		
+					<h3> If you were trying to find cars for sale you would use </h3>
+					<input type="checkbox" name="Color" value="Red">Picture link<br>
+					<input type="checkbox" name="Color" value="Green">Green<br>
+					<input type="checkbox" name="Color" value="Blue">Blue<br>
+			</div>
 			
-	<br>
-	<br>
-			
-	<button id="submitButton" type="button" class="block">
+			<div class="question">	
+					
+				<h3>What is your favorite fruit?</h3>
+				<select id="favorite">
+					<option value="Apples" >Apples</option>
+					<option value="Oranges">Oranges</option>
+					<option value="Bananas">Bananas</option>
+				</select>
+			</div>
+			<div class="question">
+				<h3> If you were trying to find cars for sale you would use </h3>
+				<input type="radio" name="cars" value="picture">Picture link<br>
+				<input type="radio" name="cars" value="header">Header link<br>
+				<input type="radio" name="cars" value="search">Search bar<br>
+				<br>
+				</div>
+			<div class="question">
+				Comments:<br>
+				<textarea rows="6" cols="70"></textarea>
+			</div>
+			<button id="submitButton" type="button" class="block">
 		SUBMIT your questionnaire
-	</button>
+		</button>
+		</div>
 		
+		</form>
 		
-	
-	</form>
-  </body>
+  
+  
+  <div class="column middle">
+    
+    <a href="https://www.kijiji.ca/"><img src="images/kijiji.png" alt="https://www.kijiji.ca/">
+			</a href="https://www.kijiji.ca/">
+			
+			</div>
+
+</div>
+  
+</body>
   <footer>
   <p>Author: Edgar</p>
   
 </footer>
-</html> 
+</html>

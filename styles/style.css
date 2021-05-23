@@ -1,67 +1,61 @@
-/* Style sheet
-   color picker www.w3schools.com/colors/colors_picker.asp
-*/
-
-html {
-  background-color: white;
+* {
+  box-sizing: border-box;
 }
- 
+
 body {
-  background-color: powderblue;
-  width: 600px;
-  border: 2px solid black;
-  padding: 0px 20px 20px 20px;
+  margin: 0;
+  background-color: lightgrey
+}
+h2 {
+text-align: center 
+
+}
+
+form {
+	padding-left: 20px;
+	
+}
+
+footer {
+	text-align: right;
+	padding-right : 20px;
+}
+
+
+.header {
+  background-color: lightblue;
+  padding: 20px;
+  text-align: left;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  height: 40px;
+}
+
+
+
+.column {
+  float: left;
+  padding: 0px;
   
 }
 
-h1 {
-	font-size: 60px;
-	text-align: left;
-	margin: 0;
-	padding: 20px 0;
-	color: orange;  
-	background-color:FFFAF0
+/* Left and right column */
+.column.left {
+  width: 40%;
+  background-color: lightblue
+  
+  
+}
+
+.column.middle {
+width: 60%;
 }
 
 img {
-  display: block;
-  margin: 0 auto;
-  align: center;
-}
-
-p {
-  color: red;
-}
-
-table {
-	border: 1px solid black;
-	background-color: #f1f1c1;
-}
-
-/* Defining styling for a specific element type - each question */
-.question {
-  background-color: black;
-  color: white;
-  margin: 20px;
-  padding: 20px;
-}
-
-/* Defining styling for a specific element type - large block buttons */
-.block {
-  display: block;
-  width: 100%;
-  border: none;
-  background-color: #ffff66;  /* yellow */
-  padding: 14px 28px;
-  font-size: 16px;
-  cursor: pointer;
-  text-align: center;
-}
-
-/* Defining styling for a specific element with an id */
-#signature {
-  text-align: right;
-  color: red;
-  font-style: italic;
-  font-size: 75%;
+  align: right;
+  width: 100%
 }
