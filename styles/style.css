@@ -16,11 +16,11 @@ body {
 
 h1 {
 	font-size: 60px;
-	text-align: center;
+	text-align: left;
 	margin: 0;
 	padding: 20px 0;
-	color: #ff00ff;  /* Fuchsia */
-	text-shadow: 3px 3px 1px black;
+	color: orange;  
+	background-color:FFFAF0
 }
 
 img {
