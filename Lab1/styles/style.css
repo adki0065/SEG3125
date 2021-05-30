@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: lightgrey
+}
+h2 {
+text-align: center 
+
+}
+
+form {
+	padding-left: 20px;
+	
+}
+
+footer {
+	text-align: right;
+	padding-right : 20px;
+}
+
+
+.header {
+  background-color: lightblue;
+  padding: 20px;
+  text-align: left;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  height: 40px;
+}
+
+
+
+.column {
+  float: left;
+  padding: 0px;
+  
+}
+
+/* Left and right column */
+.column.left {
+  width: 40%;
+  background-color: lightblue
+  
+  
+}
+
+.column.middle {
+width: 60%;
+}
+
+img {
+  align: right;
+  width: 100%
+}
