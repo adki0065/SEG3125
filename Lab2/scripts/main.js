@@ -90,3 +90,9 @@ function selectedItems() {
     c.appendChild(document.createTextNode("Total Price is " + getTotalPrice(chosenProducts)));
 
 }
+
+function increaseFontSize() {
+    document.getElementById('Client').style.fontSize = "x-large";
+    document.getElementById('Products').style.fontSize = "x-large";
+    document.getElementById('Cart').style.fontSize = "x-large";
+}
