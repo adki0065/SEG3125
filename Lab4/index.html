@@ -1,0 +1,495 @@
+<!doctype html>
+<!-- Here is a link to the code the documents this code is based on
+https://getbootstrap.com/docs/5.0/getting-started/introduction/
+This will help you get started with your code!
+-->
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+    <title>Module 4 Lab</title>
+
+
+</head>
+
+<body style="background-color: #d3ebf1;">
+    <!--
+I store all of the page information in a container,
+Many websites will use what is called CSS grid layouts, where you will have a header, body, footer and both sides used for ads or other information
+-->
+
+
+    <nav class="navbar navbar-expand-md fixed-top navbar-light shadow" style="background-color: rgb(249, 250, 250);">
+        <div class="container-fluid">
+            <a class="navbar-brand"> <img src="images/logo.png" width="50" height="50"></a>
+
+
+            <div class="collapse navbar-collapse align-bottom" id="navbarSupportedContent">
+                <ul class="navbar-nav " style="font-weight: 700;">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#aboutus">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#vets">Veterenarians</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col" style="width: fit-content;">
+
+
+
+
+
+                    <h6 style="font-size: smaller; margin-right: 5px;">Pet Vet Animal Hospital </h6>
+                    <h6 style="font-size: small;"> 221B Baker Street </h6>
+                    <h6 style="font-size: small;"> 613-300-4455 </h6>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid " id="home">
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="container-fluid  shadow" style="background-image: url(images/bkgr.png);
+        background-size: cover; height: 700px;">
+            <div class="row">
+                <div class="col">
+
+                </div>
+                <div class="col">
+
+
+
+                </div>
+                <div class="col text-light " style="text-align: right;">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br><br>
+                    <br>
+                    <br><br>
+                    <br>
+                    <br>
+                    <br>
+                    <h1> <strong>Pet Vet Animal Hospital </strong></h1>
+                    <h2>221B Baker Street</h2>
+                    <h2>613-300-4455</h2>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div id="aboutus">
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+
+
+
+
+        <div class="container-lg border bg-light shadow">
+            <div class="text-center" style="padding-top: 6px;">
+
+                <h1> About us</h1>
+            </div>
+            <hr>
+            <div style="font-size: 25px; margin-left: 5%; margin-right: 5%;">
+                <p>Situated in Ottawa, Ontario, we are a locally owned and operated Animal Hospital accredited by the College of Veterinarians of Ontario, the licensing body for animal hospitals and veterinarians in Ontario. our animal hospital has a long
+                    tradition of building lasting relationships with you and your pets. We are knowledgeable, caring and always respectful. Our experienced vets will explain your options in a thorough manner and will never perform unnecessary tests or
+                    procedures Services provided by our Animal Hospital range from Preventive Care to Examinations & Vaccinations; Pet Boarding and Pet Grooming; Dentistry; Spays and Neuters using laser Surgery and House Calls.</p>
+                <p>We are dedicated to providing the <strong>best</strong> care to our customers</p>
+            </div>
+
+            <br>
+            <br>
+
+            <div id="services">
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!--
+    Tables are one of many ways to organize information easily.
+    It is a good way to list of prices, or services in a business website
+    https://getbootstrap.com/docs/5.0/content/tables/
+    -->
+        <div class="container-lg border bg-light shadow">
+            <h1 style="text-align: center;">Our Services</h1>
+            <table class="table table-striped table-hover bg-light" style="width: 100%; background-color: #d3ebf1;">
+                <thead>
+                    <tr>
+                        <th scope="col" style="width: 70%;">
+
+                        </th>
+                        <th scope="col" style="text-align: right;">
+
+                        </th>
+                        <th scope="col" style="text-align: right;">
+
+                        </th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Check up
+                            <p style="font-size:small ;">A complete physical examination is vital to your pet's well being and the early detection and treatment of underlying diseases or conditions. Following each check-up, you will be provided a Report Card summarizing the Doctor's
+                                findings. Once your pet becomes a "Senior" (7-8 years of age), we recommend a complete physical examination every 6 months. In a senior pet, six months represents 3-5 human years, during which a great deal can change</p>
+                        </td>
+                        <td style="text-align: right;">89.99$</td>
+                        <td style="text-align: center;"> <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            select
+                          </button></td>
+                    </tr>
+                    <tr>
+                        <td>Teeth Cleaning
+                            <p style="font-size:small;">Performed under General Anesthetic, once your pet's teeth have been ultrasonically cleaned, the doctor probes the gum line at each tooth to measure the pocket depth and any gum recession. If needed, dental x-rays and any necessary
+                                extractions are then performed.</p>
+                        </td>
+                        <td style="text-align: right;">49.99$</td>
+                        <td style="text-align: center;"> <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">select</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>Spay/Neuter
+                            <p style="font-size:small;">Pets can be spayed or neutered once they reach 6 months of age. Recommended for all cats, dogs and rabbits. Spaying a pet entails surgical removal of the female reproductive tract, whereas neutering a male entails surgical
+                                removal of the testicles. Spaying a female pet avoids the inconvenience of heat cycles, eliminates life-threatening infections of the uterus, and decreases the risk of breast cancer. Neutering a male pet decreases the incidence
+                                of tumors of the anus, rectum, testicles, & prostate. Surgery may also decrease the tendency to stray or roam. Neutering a domestic rabbit can also decrease aggressive tendencies, biting, and thumping the hind feet.</p>
+                        </td>
+                        <td style="text-align: right;">249.99$</td>
+                        <td style="text-align: center;"> <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">select</button></td>
+                    </tr>
+                    <tr>
+                        <td>X-Rays
+                            <p style="font-size:small;">Ultrasound imaging uses high-frequency sound waves to generate images of a pet's internal organ(s). Ultrasonography has the added benefit that it does not use radiation and images are captured in real-time, meaning they can
+                                illustrate the functioning of internal organs and blood flow. Ultrasonography is non-invasive and provides us with an additional tool in the diagnosis and treatment of various medical conditions.</td>
+                        <td style="text-align: right;">299.99$</td>
+                        <td style="text-align: center;"> <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">select</button></td>
+                    </tr>
+                    <tr>
+                        <td>Surgery
+                            <p style="font-size:small;">We do many routine surgical procedures (spays/neuters) every day, as well as other soft tissue and basic orthopedic surgeries. We are committed to following best practices when it comes to anesthetic protocols, patient monitoring,
+                                and pain control during and after your pet’s procedure. When we have more complicated surgery we can contract the services of Dr. Denis Philibert (Dip. ACVS- Mobile Surgical Specialist), who can travel to our clinic and
+                                perform these procedures right at our clinic. We do not offer cosmetic alterations (tail dock/ear crops) or declaws. </td>
+                        <td style="text-align: right;">
+                            <div style="font-size:small;">starting at</div>
+                            399.99$</td>
+                        <td style="text-align: center;"> <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">select</button></td>
+                    </tr>
+                </tbody>
+
+            </table>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div id="vets"></div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div class="container-lg border bg-light shadow">
+        <h1 style="text-align: center;">Our Veterinarians</h1>
+        <hr>
+        <div>
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="card col-6">
+                    <img src="images/doctor.jpg " class="card-img-top " alt="... ">
+                    <div class="card-header">
+                        <h4>Dr. Allison Finlay</h4>
+                    </div>
+                    <div class="card-body ">
+                        <p class="card-text ">Born and raised in the Leaside neighbourhood of Toronto. She began her career in the same area after graduating from the Ontario Veterinary College in 2007, and moved to Ottawa with her husband in fall of the same year. Dr. Finlay
+                            has been practicing in Ottawa ever since. Her professional interests include wellness and geriatric medicine as well as oncology (the treatment of cancer), and especially cherishes the bonds that she is able to form with both
+                            her patients and their owners</p>
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="card col-6">
+                    <img src="images/doctor.jpg " class="card-img-top " alt="... ">
+                    <div class="card-header">
+                        <h4>Dr. Allison Finlay</h4>
+                    </div>
+                    <div class="card-body ">
+                        <p class="card-text ">Born and raised in the Leaside neighbourhood of Toronto. She began her career in the same area after graduating from the Ontario Veterinary College in 2007, and moved to Ottawa with her husband in fall of the same year. Dr. Finlay
+                            has been practicing in Ottawa ever since. Her professional interests include wellness and geriatric medicine as well as oncology (the treatment of cancer), and especially cherishes the bonds that she is able to form with both
+                            her patients and their owners</p>
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="card col-6">
+                    <img src="images/doctor.jpg " class="card-img-top " alt="... ">
+                    <div class="card-header">
+                        <h4>Dr. Allison Finlay</h4>
+                    </div>
+                    <div class="card-body ">
+                        <p class="card-text ">Born and raised in the Leaside neighbourhood of Toronto. She began her career in the same area after graduating from the Ontario Veterinary College in 2007, and moved to Ottawa with her husband in fall of the same year. Dr. Finlay
+                            has been practicing in Ottawa ever since. Her professional interests include wellness and geriatric medicine as well as oncology (the treatment of cancer), and especially cherishes the bonds that she is able to form with both
+                            her patients and their owners</p>
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+            </div>
+
+        </div>
+        <br>
+    </div>
+    <br>
+    <br>
+    <br>
+
+
+    <!--
+    <div class="container-lg ">
+        <h1>Here is an alert!</h1>
+        <!--
+         Alerts are an easy way to grab the users attention, this page goes into more detail
+    https://getbootstrap.com/docs/5.0/components/alerts/
+    
+        <p>This indicated something important in the page</p>
+        <div class="alert alert-danger alert-dismissible fade show " role="alert ">
+            <strong>Yikes!</strong> Perhaps you left one of the fields empty for this to appear?
+            <button type="button " class="btn-close " data-bs-dismiss="alert " aria-label="Close "></button>
+        </div>
+    </div>
+    <div class="container-lg ">
+        <h1>Button States</h1>
+        <!--
+    Buttons can be used for submitting forms, triggering events among many other things.
+    https://getbootstrap.com/docs/5.0/components/buttons/
+    -->
+    <!--
+        <button type="button " class="btn btn-warning ">Primary Button</button>
+        <button type="button " class="btn btn-warning active ">Active Button</button>
+        <button type="button " class="btn btn-warning " disabled>Disabled Button</button>
+    </div>
+
+    <div class="container-lg ">
+        <h1>Modal Example</h1>
+
+        <!-- Button trigger modal
+    We use the same button code from above, but now we can trigger a modal to appear.
+    The bootstrap tutorial includes many different types of modals that you can explore
+    https://getbootstrap.com/docs/5.0/components/modal/
+    -->
+    <!--
+        <button type="button " class="btn btn-primary " data-bs-toggle="modal " data-bs-target="#exampleModal ">
+        Launch demo modal
+    </button>
+
+        <!-- Modal -->
+    <!--
+        <div class="modal fade " id="exampleModal " tabindex="-1 " aria-labelledby="exampleModalLabel " aria-hidden="true ">
+            <div class="modal-dialog ">
+                <div class="modal-content ">
+                    <div class="modal-header ">
+                        <h5 class="modal-title " id="exampleModalLabel ">Modal title</h5>
+                        <button type="button " class="btn-close " data-bs-dismiss="modal " aria-label="Close "></button>
+                    </div>
+                    <div class="modal-body ">
+                        In the body we can add various components. In this example some radio buttons
+                        <div class="form-check ">
+                            <input class="form-check-input " type="radio " name="flexRadioDefault " id="flexRadioDefault1 ">
+                            <label class="form-check-label " for="flexRadioDefault1 ">
+                            Yes
+                        </label>
+                        </div>
+                        <div class="form-check ">
+                            <input class="form-check-input " type="radio " name="flexRadioDefault " id="flexRadioDefault2 " checked>
+                            <label class="form-check-label " for="flexRadioDefault2 ">
+                            No
+                        </label>
+                        </div>
+                    </div>
+                    <div class="modal-footer ">
+                        <button type="button " class="btn btn-secondary " data-bs-dismiss="modal ">Close</button>
+                        <button type="button " class="btn btn-primary ">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cards are quite useful when building a website. They are a useful way to organize information.
+    They can be organized using a CSS grid or other layout options.
+    https://getbootstrap.com/docs/5.0/components/card/
+    -->
+
+
+
+
+    <!--
+    We can also use buttons to expand some hidden options
+    https://getbootstrap.com/docs/5.0/components/collapse/
+   
+    <div class="container-lg ">
+        <h1>More Information</h1>
+
+        <button class="btn btn-primary " type="button " data-bs-toggle="collapse " data-bs-target="#collapseExample " aria-expanded="false " aria-controls="collapseExample ">
+        Button To Expand Options
+    </button>
+
+        <div class="collapse " id="collapseExample ">
+            <div class="card card-body ">
+                Here we have some hidden data to avoid cluttering the page with information
+            </div>
+        </div>
+         -->
+
+    <!-- This example is using what is called an accordian, this is one of three examples
+    https://getbootstrap.com/docs/5.0/components/accordion/
+
+
+        <div class="accordion accordion-flush " id="accordionFlushExample ">
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingOne ">
+                    <button class="accordion-button collapsed " type="button " data-bs-toggle="collapse " data-bs-target="#flush-collapseOne " aria-expanded="false " aria-controls="flush-collapseOne ">
+                    Accordion Item #1
+                </button>
+                </h2>
+                <div id="flush-collapseOne " class="accordion-collapse collapse " aria-labelledby="flush-headingOne " data-bs-parent="#accordionFlushExample ">
+                    <div class="accordion-body ">I can put information in this area</div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingTwo ">
+                    <button class="accordion-button collapsed " type="button " data-bs-toggle="collapse " data-bs-target="#flush-collapseTwo " aria-expanded="false " aria-controls="flush-collapseTwo ">
+                    Accordion Item #2
+                </button>
+                </h2>
+                <div id="flush-collapseTwo " class="accordion-collapse collapse " aria-labelledby="flush-headingTwo " data-bs-parent="#accordionFlushExample ">
+                    <div class="accordion-body ">I can put information in this area</div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header " id="flush-headingThree ">
+                    <button class="accordion-button collapsed " type="button " data-bs-toggle="collapse " data-bs-target="#flush-collapseThree " aria-expanded="false " aria-controls="flush-collapseThree ">
+                    Accordion Item #3
+                </button>
+                </h2>
+                <div id="flush-collapseThree " class="accordion-collapse collapse " aria-labelledby="flush-headingThree " data-bs-parent="#accordionFlushExample ">
+                    <div class="accordion-body ">I can place information in this area</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Book Appointment
+
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row p-1">
+                            <div class="col"><label for="birthday">Select Date:</label></div>
+                            <div class="col" style="text-align: right;"><input type="date" id="birthday" name="birthday"></div>
+                        </div>
+                        <div class="row p-1">
+                            <div class="col"><label for="appt">Select a time:</label></div>
+                            <div class="col" style="text-align: right;"><input type="time" id="appt" name="appt"></div>
+                        </div>
+
+                        <br>
+                        <div class="row p-1">
+                            <div class="col"><label for="name">Name:</label></div>
+                            <div class="col" style="text-align: right;"><input type="text" id="name" name="name"></div>
+                        </div>
+                        <div class="row p-1">
+                            <div class="col"><label for="email">Email:</label></div>
+                            <div class="col" style="text-align: right;"><input type="email" id="email" name="email"></div>
+                        </div>
+                        <div class="row p-1 ">
+                            <div class="col"><label for="phone">Phone Number:</label></div>
+                            <div class="col" style="text-align: right;"><input type="tel" id="phone" name="phone"></div>
+                        </div>
+
+
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid bg-light" style="text-align: center;">
+            <br>
+            <p style="font-size: small;"> Website Author: Edgar
+            </p>
+            <br>
+
+        </div>
+    </footer>
+
+
+    <!-- here we input our javascript helper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js " integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4 " crossorigin="anonymous "></script>
+</body>
+
+
+</html>

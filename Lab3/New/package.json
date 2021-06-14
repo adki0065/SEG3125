@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "vue-table-dynamic": "^0.4.5"
+  }
+}

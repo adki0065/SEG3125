@@ -4,5 +4,10 @@ const app = Vue.createApp({
             cart: 0,
         }
     },
-    methods: {}
+    methods: {
+        methods: {
+            updateCart(id) {
+              this.cart.push(id)
+            }
+    }
 })
