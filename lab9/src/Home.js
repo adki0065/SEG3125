@@ -1,29 +1,28 @@
 import { useEffect, useState } from "react";
 import BlogList from "./BlogList";
-import spca from './assets/spca.png'
-import snow from './assets/snow.png'
-import bg from './assets/bg.jfif'
 import { Link } from 'react-router-dom'
+import Breadcrumb from 'react-bootstrap/Breadcrumb'
 
 
 const Home = () => {
-    const [blogs, setBlogs] = useState([
-        { title: 'My new website', body: 'lorem ipsum...', author: spca, path: '/spca', id: 1 },
-        { title: 'Welcome party!', body: 'lorem ipsum...', author: snow, path: '/snow', id: 2 },
-        { title: 'Web dev top tips', body: 'lorem ipsum...', author: bg, path: '/bgc', id: 3 }
-      ])
+    const [blogs, setBlogs] = useState(null)
 
       const handleDelete = (id) => {
           const newBlogs = blogs.filter(blog => blog.id !== id)
           setBlogs(newBlogs)
 
-      }
+      };
 
       useEffect(() => {
-          console.log('used effect')
-          console.log(blogs)
+          fetch('http://localhost:8000/blogs')
+            .then(res => {
+                return res.json();
+            })
+            .then((data) => {
+                setBlogs(data);
+            });
 
-      })
+      }, []);
 
     //let name = "edgar";
     {/*const [name, setName] = useState('edgar');
@@ -38,7 +37,17 @@ const Home = () => {
     }*/}
     return (
         <div className="home">
-            <BlogList blogs={blogs} title="all" handleDelete={handleDelete}></BlogList>
+            <div className="bread" >
+        <Breadcrumb style={{marginLeft:"20px"}}>
+  <Breadcrumb.Item ><a href="/" style={{color: 'white'}}>Home</a></Breadcrumb.Item>
+  <Breadcrumb.Item ><a href="/services" style={{color: 'white'}}>
+    Services</a>
+  </Breadcrumb.Item>
+  
+</Breadcrumb>
+  
+</div>
+            {blogs && <BlogList blogs={blogs} title="all" handleDelete={handleDelete}></BlogList>}
            {/* <BlogList blogs={blogs.filter((blog) => blog.author === "mario")} title="mario"></BlogList>
             
             <h2>Homepage</h2>

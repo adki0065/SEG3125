@@ -1,0 +1,24 @@
+{
+    "blogs": [{
+            "title": "My new website",
+            "body": "lorem ipsum...",
+            "author": "spca",
+            "path": "../assets/spca.png",
+            "id": 1
+        },
+        {
+            "title": "Welcome party!",
+            "body": "lorem ipsum...",
+            "author": "snow",
+            "path": "../assets/snow.png",
+            "id": 2
+        },
+        {
+            "title": "Web dev top tips",
+            "body": "lorem ipsum...",
+            "author": "bgc",
+            "path": "../assets/bg.jfif",
+            "id": 3
+        }
+    ]
+}

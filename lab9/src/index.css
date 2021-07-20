@@ -1,63 +1,119 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-
-/* base styles */
-
-* {
-    margin: 0;
-    font-family: "Quicksand";
-    color: #333;
-}
-
-.navbar {
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-    border-bottom: 1px solid #f2f2f2;
-    background-color: #f08c2e;
-}
-
-.navbar h1 {
-    color: #f2f2f2;
-}
-
-.navbar .links {
-    margin-left: auto;
-    background-color: #f08c2e;
-}
-
-.navbar a {
-    margin-left: 16px;
-    text-decoration: none;
-    padding: 6px;
-    background-color: #f08c2e;
-}
-
-.navbar a:hover {
-    color: #f1356d;
-}
-
-.content {
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 20px;
-}
-
-
-/* blog previews / list */
-
-.blog-preview {
-    padding: 10px 16px;
-    margin: 20px 0;
-    border-bottom: 1px solid #fafafa;
-}
-
-.blog-preview:hover {
-    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
-}
-
-.blog-preview h2 {
-    font-size: 20px;
-    color: #f08c2e;
-    margin-bottom: 8px;
-}
+            @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+            /* base styles */
+            
+            * {
+                margin: 0;
+                font-family: "Quicksand";
+                color: #f2f2f2;
+            }
+            
+            .navbar {
+                padding: 20px;
+                display: flex;
+                align-items: center;
+                margin: 0 auto;
+                border-bottom: 1px solid #f2f2f2;
+                background-color: #f08c2e;
+            }
+            
+            .navbar h1 {
+                color: #f2f2f2;
+            }
+            
+            .navbar .links {
+                margin-left: auto;
+                background-color: #f08c2e;
+                color: #f2f2f2;
+            }
+            
+            .navbar a {
+                margin-left: 16px;
+                text-decoration: none;
+                padding: 6px;
+                background-color: #f08c2e;
+            }
+            
+            .navbar a:hover {
+                color: #f2f2f2;
+            }
+            
+            .content {
+                max-width: 600px;
+                margin: 40px auto;
+                padding: 20px;
+            }
+            /* blog previews / list */
+            
+            .blog-preview {
+                padding: 10px 16px;
+                margin: 20px 0;
+                border-bottom: 1px solid #fafafa;
+            }
+            
+            .blog-preview:hover {
+                box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+            }
+            
+            .blog-preview h2 {
+                font-size: 20px;
+                color: #f08c2e;
+                margin-bottom: 8px;
+            }
+            
+            .footer {
+                padding: 20px;
+                display: flex;
+                align-items: center;
+                margin: 0 auto;
+                border-bottom: 1px solid #f2f2f2;
+                background-color: #f08c2e;
+            }
+            
+            .footer h4 {
+                color: rgb(242, 242, 242);
+            }
+            
+            .footer .links {
+                margin-left: auto;
+                background-color: #f08c2e;
+            }
+            
+            .footer a {
+                margin-left: 16px;
+                text-decoration: none;
+                padding: 6px;
+                background-color: #f08c2e;
+            }
+            
+            .footer a:hover {
+                color: #f1356d;
+            }
+            
+            .serviceHeader {
+                background-color: #f08c2e;
+                color: #f2f2f2;
+            }
+            
+            .serviceHeader h1 {
+                background-color: #f08c2e;
+                color: #f2f2f2;
+            }
+            
+            .bread {
+                background-color: #2aade9;
+                color: #f2f2f2;
+            }
+            
+            .bread Breadcrumb.Item {
+                background-color: #2aade9;
+                color: #f2f2f2;
+            }
+            
+            .cardimg {
+                width: 200px;
+                height: 250px;
+            }
+            
+            .cardtxt {
+                color: rgb(8, 14, 17);
+            }
