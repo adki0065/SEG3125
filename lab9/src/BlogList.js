@@ -7,26 +7,27 @@ import { Link } from 'react-router-dom'
 
 
 
-const BlogList = ({blogs, title, handleDelete}) => {
+const BlogList = ({blogs, title}) => {
 
     
     
     return ( 
         
-        <div className="blog-list"  style={{marginTop: "-15px"}}>
+        <div className="blog-list"  style={{marginTop: "-16px"}}>
             
                 
-            <Row className="serviceHeader" style={{textAlign: "left" }}><h1 style={{marginLeft: "40px" }}>Services</h1></Row>
+            <Row className="serviceHeader" style={{textAlign: "left" }}><h1 style={{marginLeft: "40px" }}>{title}</h1></Row>
             {blogs.map((blog) => (
                 <div className="blog-preview" key={blog.id}>
-                    <Link to={`/service/${blog.id}`}>
+                    <Link to={`/services/${blog.id}`}>
                     
                     <Row style={{textAlign: "left", marginLeft: "40px" }}>
-                    <Col xs="auto"><Image src={blog.path} style={{width: "250px" }}></Image></Col> 
+                    <Col xs="auto"><Image src={blog.path} style={{width: "250px", height:"150px" }}></Image></Col> 
                     <Col><h2>{blog.title}</h2>
-                    <p>{blog.body}</p></Col>
+                    <p style={{color: "black"}}>{blog.body}</p></Col>
                     
                 </Row></Link>
+                
                 </div>
             ))}
         </div>

@@ -1,13 +1,12 @@
-import Breadcrumb from 'react-bootstrap/Breadcrumb'
+import { Breadcrumb, BreadcrumbItem } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Bread = () => {
     return ( 
         <div className="bread" >
         <Breadcrumb style={{marginLeft:"20px"}}>
-  <Breadcrumb.Item ><a href="/" style={{color: 'white'}}>Home</a></Breadcrumb.Item>
-  <Breadcrumb.Item ><a href="/services" style={{color: 'white'}}>
-    Services</a>
-  </Breadcrumb.Item>
+  <Breadcrumb.Item> <Link to="/" style={{color: 'white'}}>Home</Link></Breadcrumb.Item>
+  <Breadcrumb.Item ><Link to="/services" style={{color: 'white'}}>Services</Link></Breadcrumb.Item>
   <Breadcrumb.Item active style={{color: 'white'}}>spca</Breadcrumb.Item>
 </Breadcrumb>
   

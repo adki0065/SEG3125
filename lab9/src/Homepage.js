@@ -24,10 +24,10 @@ const Homepage = () => {
             <Row style={{ padding: '1rem' }}>
             
                 <Col>
-                <Card style={{ width: '18rem' }}><Link to={`/services`}>
+                <Card style={{ width: '18rem' }}><Link to={`/service`}>
   <Card.Img className="cardimg" variant="top" src={dog} />
   <Card.Body>
-    <Card.Title style={{ backgroundColor: '#f08c2e', width: '100%'}}>Animal Services</Card.Title>
+    <Card.Title style={{ backgroundColor: '#f08c2e', width: '100%', color:"white"}}>Animal Services</Card.Title>
     <Card.Text className="cardtxt">
       Some quick example text to build on the card title and make up the bulk of
       the card's content.
@@ -38,10 +38,10 @@ const Homepage = () => {
                 </Col>
                 
                 <Col>
-                <Card style={{ width: '18rem' }}><Link to={`/services`}>
+                <Card style={{ width: '18rem' }}><Link to={`/service`}>
   <Card.Img className="cardimg" variant="top" src={kid} />
   <Card.Body>
-    <Card.Title style={{ backgroundColor: '#f08c2e', width: '100%'}}>Children Services</Card.Title>
+    <Card.Title style={{ backgroundColor: '#f08c2e', width: '100%', color:"white"}}>Children Services</Card.Title>
     <Card.Text className="cardtxt">
       Some quick example text to build on the card title and make up the bulk of
       the card's content.
@@ -53,10 +53,10 @@ const Homepage = () => {
             </Row>
             <Row>
                 <Col>
-                <Card style={{ width: '18rem' }}><Link to={`/services`}>
+                <Card style={{ width: '18rem' }}><Link to={`/service`}>
   <Card.Img className="cardimg" variant="top" src={house} />
   <Card.Body>
-    <Card.Title style={{ backgroundColor: '#f08c2e'}}>Housing Services</Card.Title>
+    <Card.Title style={{ backgroundColor: '#f08c2e', color:"white"}}>Housing Services</Card.Title>
     <Card.Text className="cardtxt">
       Some quick example text to build on the card title and make up the bulk of
       the card's content.
@@ -66,10 +66,10 @@ const Homepage = () => {
 </Card>
                 </Col>
                 <Col> 
-                <Card style={{ width: '18rem' }}><Link to={`/services`}>
+                <Card style={{ width: '18rem' }}><Link to={`/service`}>
   <Card.Img className="cardimg" variant="top" src={money} />
   <Card.Body>
-    <Card.Title style={{ backgroundColor: '#f08c2e', width: '100%'}}>Financial Services</Card.Title>
+    <Card.Title style={{ backgroundColor: '#f08c2e', width: '100%', color:"white"}}>Financial Services</Card.Title>
     <Card.Text className="cardtxt">
       Some quick example text to build on the card title and make up the bulk of
       the card's content.
