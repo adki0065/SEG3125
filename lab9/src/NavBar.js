@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom'
 import Image from'react-bootstrap/Image'
 import logo from './images/logo.png'
 import { House, InfoLg, Wrench } from 'react-bootstrap-icons';
+import FormControl from 'react-bootstrap/FormControl';
+import InputGroup from 'react-bootstrap/InputGroup';
 
 
 
@@ -23,7 +25,16 @@ const Navbar = () => {
                 </Col>
                     <Row><Col><h1 style={{ color: "white", marginRight:"-40px"}}>Find A Service</h1></Col>
                     <Col className='middle' ><Image src={logo} style={{width: "60px", marginLeft:"-20px", marginTop:"15px"}}></Image></Col></Row>
-                    <Col style={{textAlign: "right",color: "white", fontSize:"larger" }} >search</Col>
+                    <Col style={{textAlign: "right",color: "white", fontSize:"larger" }} ><InputGroup className="mb-3" style={{width:"250px", marginLeft:"150px"}}>
+    
+    <FormControl
+      placeholder="Search"
+      aria-label="Username"
+      aria-describedby="basic-addon1"
+      
+    />
+  </InputGroup>
+                    </Col>
                 
                 </Container>
             

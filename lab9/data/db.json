@@ -1,20 +1,20 @@
 {
     "blogs": [{
-            "title": "My new website",
+            "title": "SPCA",
             "body": "lorem ipsum...",
             "author": "spca",
             "path": "../assets/spca.png",
             "id": 1
         },
         {
-            "title": "Welcome party!",
+            "title": "Snowsuit Fund",
             "body": "lorem ipsum...",
             "author": "snow",
             "path": "../assets/snow.png",
             "id": 2
         },
         {
-            "title": "Web dev top tips",
+            "title": "Boys and Girls Club",
             "body": "lorem ipsum...",
             "author": "bgc",
             "path": "../assets/bg.jfif",

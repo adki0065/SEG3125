@@ -8,6 +8,7 @@ import Services from './Services'
 import Service from './Service'
 import Footer from './Footer'
 import Homepage from './Homepage';
+import About from './About';
 
 function App() {
 
@@ -30,6 +31,9 @@ function App() {
        <Route path="/services/:id">
           <Services></Services>
          
+       </Route>
+       <Route path="/about">
+        <About></About>
        </Route>
        
 

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import BlogList from "./BlogList";
 import Breadcrumb from 'react-bootstrap/Breadcrumb'
 import useFetch from "./useFetch";
@@ -23,15 +23,14 @@ const Services = () => {
     };
     return ( 
         <div className="services">
-        <div className="bread" >
-        <Breadcrumb style={{marginLeft:"20px", fontSize:"larger"}}>
-  <Breadcrumb.Item ><a href="/" style={{color: 'white'}}>Home</a></Breadcrumb.Item>
-  <Breadcrumb.Item ><a href="/service" style={{color: 'white'}}>
-    Services</a>
-  </Breadcrumb.Item>
-  <Breadcrumb.Item active style={{color: 'white'}}>spca</Breadcrumb.Item>
-</Breadcrumb></div>
-<div className="servicesBody" style={{backgroundColor: 'white'}} >
+         {blog && (<div className="bread" >
+        <Breadcrumb style={{marginLeft:"20px", fontSize:"larger", height:"30px"}}>
+  <Breadcrumb.Item> <Link to="/" style={{color: 'white'}}>Home</Link></Breadcrumb.Item>
+  <Breadcrumb.Item ><Link to="/services" style={{color: 'white'}}>Services</Link></Breadcrumb.Item>
+  <Breadcrumb.Item ><Link to="/services/1" style={{color: 'white'}}>{blog.title}</Link></Breadcrumb.Item>
+</Breadcrumb></div>)}
+
+<div className="servicesBody" style={{backgroundColor: 'white', paddingTop:"10px"}} >
   {blog && (<div>
     <Row><Col xs="auto"><Image src={blog.path} style={{width: "250px", height:"150px" }}></Image></Col> 
     <Col style={{textAlign: "left", marginLeft: "10rem" }}>

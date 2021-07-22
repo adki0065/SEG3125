@@ -14,9 +14,10 @@ const Homepage = () => {
     return ( 
     <div className="homePage">
         <div className="bread" >
-        <Breadcrumb style={{marginLeft:"20px"}}>
-  <Breadcrumb.Item ><a href="/" style={{color: 'white'}}>Home</a></Breadcrumb.Item>
+        <Breadcrumb style={{marginLeft:"20px", paddingBottom:"5px", fontSize:"larger",height:"30px"}}>
+  <Breadcrumb.Item> <Link to="/" style={{color: 'white'}}>Home</Link></Breadcrumb.Item>
   
+ 
 </Breadcrumb>
   
 </div>
